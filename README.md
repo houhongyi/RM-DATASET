@@ -30,7 +30,7 @@ The labeled images of the YNU-RMOD Dataset is as follows:
 </table>
 <table>
     <tr>
-        <td ><center><img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/16.png"></center></td>
+        <td ><center><img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/34.png"></center></td>
     </tr>
 </table>  
 我们研究使用深度学习的办法检测机器人和装甲板，还自制了带旋转矩形框的标注软件。
@@ -42,7 +42,7 @@ The labeled images of the YNU-RMOD Dataset is as follows:
 3点击或者(Ctrl+S)c保存即可保存json标注文件。  
 <table>
     <tr>
-        <td ><center><img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/6.png"></center></td>
+        <td ><center><img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/29.png"></center></td>
     </tr>
  </able>
 
