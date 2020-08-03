@@ -18,7 +18,7 @@ Rectangles:
 Polygons:   
 
 <img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/23.png">  
-<img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/24.png">  
+<img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/24.jpg">  
 
 标注顺序：永远先点击左上角为1，然后点击右上角为2，最后点击右下角为3（如上所示），程序会自动拟合出与之匹配的斜矩形。  
 3.保存  
