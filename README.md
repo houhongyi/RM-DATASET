@@ -8,7 +8,7 @@ YNU-RMOD数据集的来源
 Label	   |  Name	  |  The number of images
  :-----:  | :-----:  |  :-----:   
 1 	  |  	 RoboMaster比赛视频收集的图片   |   13521
-2	   |    RoboMaster网站场地拍摄的图片   |     3448
+2	   |    RoboMaster网站场地拍摄的图片   |     3447
 3	   |   	RoboMaster网站收集的图片            |     6240
 4	   |   实验室自制比赛场地拍摄的图片	      |     8108
 5	   |   DJI ROCO	           |     25795
@@ -26,7 +26,7 @@ Label	   |  Name	  |  Total instances
 8	   |   armor_blue	               |     161333
 9	   |   armor_grey	               |     22146  
 
-The labeled images of the YNU-RMOD Dataset is as follows:  
+The YNU-RMOD 数据集的标注图如下所示:  
 </table>
 <table>
     <tr>
@@ -35,11 +35,16 @@ The labeled images of the YNU-RMOD Dataset is as follows:
 </table>  
 我们研究使用深度学习的办法检测机器人和装甲板，还自制了带旋转矩形框的标注软件。
 使用指导:  
-1.点击Open或Open Dir(如需大量标记图片建议批量放在Picture_Data文件夹中 点击Open Dir)  
+1.点击Open或Open Dir(如需大量标记图片建议批量放在Picture_Data文件夹中 点击Open Dir)。
+
 2.1可选择菜单栏Edit选择标注Rectangles(正矩形)，Polygons(斜矩形)，Points(点)  
+
 2.2点完第一个点松开鼠标滑动至令一标注边缘点击鼠标即可完成标注。  
+
 2.3标注顺序：永远先点击左上角为1，然后点击右上角为2，最后点击右下角为3（如上所示），程序会自动拟合出与之匹配的斜矩形。  
+
 3点击或者(Ctrl+S)c保存即可保存json标注文件。  
+具体操作可见Label_V2文件夹下的README.md。
 <table>
     <tr>
         <td ><center><img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/29.png"></center></td>
