@@ -8,7 +8,7 @@ YNU-RMOD数据集的来源
 Label	   |  Name	  |  The number of images
  :-----:  | :-----:  |  :-----:   
 1 	  |  	 RoboMaster比赛视频收集的图片   |   13521
-2	   |    RoboMaster网站场地拍摄的图片   |     3447
+2	   |    RoboMaster赛场实拍图片   |     3447
 3	   |   	RoboMaster网站收集的图片            |     6240
 4	   |   实验室自制比赛场地拍摄的图片	      |     8108
 5	   |   DJI ROCO	           |     25795
