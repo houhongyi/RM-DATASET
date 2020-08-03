@@ -15,26 +15,26 @@ The YNU-RMOD 数据集
 YNU-RMOD对官方开源数据集(DJI ROCO)进行了处理，由于开源数据集的图片非常大，不适合直接在jetson tx2、jetson nano等移动计算平台上进行Deep Learning，我们将所有图片裁剪成416*416大小(YOLO的默认图片输入尺寸)，并且滤除了DJI ROCO中Bounding Box面积小于250像素以及拍摄模糊的噪声图片（约10000张）。最终得到57111张有效图片（其中，DJI ROCO图片25795张，另加入图片31316张）。数据集细节如下：
 
 YNU-RMOD数据集的来源
-Label	   |  Name	  |  The number of images
- :-----:  | :-----:  |  :-----:   
-1 	  |  	 RoboMaster比赛视频收集的图片   |   13521
-2	   |    RoboMaster赛场实拍图片   |     3447
-3	   |   	RoboMaster网站收集的图片            |     6240
-4	   |   实验室自制比赛场地拍摄的图片	      |     8108
-5	   |   DJI ROCO	           |     25795
+Label	   |  The source of dateset    |    Name	  |  The number of images
+ :-----:  | :-----:  |  :-----:   |  :-----:   
+1 	  |  	 YNU-RMOD    |    RoboMaster比赛视频收集的图片   |   13521
+2	    |    YNU-RMOD    |    RoboMaster赛场实拍图片                |     3447
+3	    |   	YNU-RMOD   |    RoboMaster网站收集的图片            |     6240
+4	    |   YNU-RMOD     |    实验室自制比赛场地拍摄的图片	    |     8108
+5	    |   DJI ROCO	      |      DJI ROCO    |    25795
 
-YNU-RMOD数据集所有标签的统计
+YNU-RMOD数据集所有标签的统计（包含 DJI ROCO）
 Label	   |  Name	  |  Total instances
  :-----:  | :-----:  |  :-----:   
 1 	 |   car_red	                        |     36744
-2	   |   car_blue	                     |     38905
-3	   |   car_unknow	             |     11385
-4	   |   watcher_red	             |     1390
-5	   |   watcher_blue	           |     2484
-6	   |   watcher_unknow	   |     2528
-7	   |   armor_red	                 |     142221
-8	   |   armor_blue	               |     161333
-9	   |   armor_grey	               |     22146  
+2	   |   car_blue	                       |     38905
+3	   |   car_unknow	               |     11385
+4	   |   watcher_red	              |     1390
+5	   |   watcher_blue	             |     2484
+6	   |   watcher_unknow	     |     2528
+7	   |   armor_red	                  |     142221
+8	   |   armor_blue	                 |     161333
+9	   |   armor_grey	                 |     22146  
 
 The YNU-RMOD 数据集的标注图如下所示:  
 </table>
