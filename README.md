@@ -26,6 +26,7 @@ Label	   |  Name	  |  Total instances
 7	   |   armor_red	                 |     142221
 8	   |   armor_blue	               |     161333
 9	   |   armor_grey	               |     22146  
+
 The labeled images of the YNU-RMOD Dataset is as follows:  
 </table>
 <table>
