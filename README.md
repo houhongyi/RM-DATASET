@@ -1,20 +1,19 @@
 # YNU-RMOD(RoboMaster Object Detection) Dataset
-Download address of the YNU-RMOD Dataset  
-Baidu network disk link：https://pan.baidu.com/s/1PIwo_XcOmsrCQqq3X-dTHA   
-Extraction code：nqr0  
-We combined our own dataset and DJI's official open source dataset to make a relatively complete dataset, each of which accounted for half. Our own dataset contains the images taken at the DJI's competition site, the images found on the DJI's official website, the images taken from the competition video on the DJI's official website, and the images taken at the venue made by the laboratory.We processed the DJI's official open source dataset, cropped the images to a size of 416 * 416, and removed some blurry images and the size < 230 labels.  
-THE ROBOMASTER DATASET contains 9 types of labels, which are car_red, car_blue, car_unknow, watcher_red, watcher_blue, watcher_unknow, armor_red, armor_blue and armor_grey.  
+The YNU-RMOD 数据集    
+百度网盘的下载链接：https://pan.baidu.com/s/1PIwo_XcOmsrCQqq3X-dTHA   
+提取码：nqr0  
+我们结合自己的数据集和官方开源的数据集做出了一份比较完整的数据集，两者分别占一半。我们自己的数据集包含在比赛现场拍摄的图片，官网上找的图片，官网比赛视频截取的图片，实验室自己制作比赛场地拍摄的图片。我们对官方开源数据集(DJI ROCO)进行了处理，由于开源数据集的图片非常大，不适合yolov3-tiny的训练，我们将所有图片裁剪成416*416大小，并且删除了部分模糊的图片，错误的标签以及非常小的标签。
 
-The source of the dataset
+YNU-RMOD数据集的来源
 Label	   |  Name	  |  The number of images
  :-----:  | :-----:  |  :-----:   
-1 	  |   The images taken at the DJI's competition site	                       |   13521
-2	   |   The images found on the DJI's official website	                     |     3448
-3	   |   The images taken at the venue made by the laboratory	            |     6240
-4	   |   The images taken from the competition video on the DJI's official website	             |     8108
-5	   |   DJI's official open source dataset	           |     25795
+1 	  |  	 RoboMaster比赛视频收集的图片   |   13521
+2	   |    RoboMaster网站场地拍摄的图片   |     3448
+3	   |   	RoboMaster网站收集的图片            |     6240
+4	   |   实验室自制比赛场地拍摄的图片	      |     8108
+5	   |   DJI ROCO	           |     25795
 
-The labels of dataset
+YNU-RMOD数据集所有标签的统计
 Label	   |  Name	  |  Total instances
  :-----:  | :-----:  |  :-----:   
 1 	 |   car_red	                        |     36744
@@ -34,11 +33,17 @@ The labeled images of the YNU-RMOD Dataset is as follows:
         <td ><center><img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/16.png"></center></td>
     </tr>
 </table>  
-We also made our own dataset labeling software for labeling rotating rectangular boxes. How to use this annotation software specifically refer to the README.md file under Label_V2 file.  
-The rendering effect diagram is as follows:  
+我们研究使用深度学习的办法检测机器人和装甲板，还自制了带旋转矩形框的标注软件。
+使用指导:  
+1.点击Open或Open Dir(如需大量标记图片建议批量放在Picture_Data文件夹中 点击Open Dir)  
+2.1可选择菜单栏Edit选择标注Rectangles(正矩形)，Polygons(斜矩形)，Points(点)  
+2.2点完第一个点松开鼠标滑动至令一标注边缘点击鼠标即可完成标注。  
+2.3标注顺序：永远先点击左上角为1，然后点击右上角为2，最后点击右下角为3（如上所示），程序会自动拟合出与之匹配的斜矩形。  
+3点击或者(Ctrl+S)c保存即可保存json标注文件。  
 <table>
     <tr>
         <td ><center><img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/6.png"></center></td>
     </tr>
+ </able>
 
 
