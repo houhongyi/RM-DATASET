@@ -1,8 +1,16 @@
-# YNU-RMOD(RoboMaster Object Detection) Dataset
+# 一、YNU-RMOD(RoboMaster Object Detection) Dataset
 The YNU-RMOD 数据集    
 百度网盘的下载链接：https://pan.baidu.com/s/1PIwo_XcOmsrCQqq3X-dTHA   
 提取码：nqr0  
-我们结合自己的数据集和官方开源的数据集做出了一份比较完整的数据集，两者分别占一半。我们自己的数据集包含在比赛现场拍摄的图片，官网上找的图片，官网比赛视频截取的图片，实验室自己制作比赛场地拍摄的图片。我们对官方开源数据集(DJI ROCO)进行了处理，由于开源数据集的图片非常大，不适合yolov3-tiny的训练，我们将所有图片裁剪成416*416大小，并且删除了部分模糊的图片，错误的标签以及非常小的标签。
+官方于2019年开源了DJI ROCO目标检测数据集。战队使用中发现，该数据集具有以下缺陷：
+1、数据集均为赛场高清摄像机拍摄，与机器人视角的工业相机拍摄差异较大；
+2、模糊图片很多，带来了大量噪声，致使训练中模型无法较好收敛；
+3、图片拍摄视角均为俯拍和第三视角；
+4、小目标很多。
+另外在实验室实际测试中，光线和场景变化都很大。仅使用官方提供的数据训练的模型鲁棒性很差，无法适应实际环境，且较多的小目标极易造成误检，模型检测精度较低。
+
+因此，战队使用官网图片和比赛视频，以及在正式比赛场地和实验室中录制的图片进一步完善补充了DJI ROCO数据集，制作了YNU-RoboMaster Object Detection(RMOD) Dataset.
+YNU-RMOD对官方开源数据集(DJI ROCO)进行了处理，由于开源数据集的图片非常大，不适合直接在jetson tx2、jetson nano等移动计算平台上进行Deep Learning，我们将所有图片裁剪成416*416大小(YOLO的默认图片输入尺寸)，并且滤除了DJI ROCO中Bounding Box面积小于250像素以及拍摄模糊的噪声图片（约10000张）。最终得到57111张有效图片（其中，DJI ROCO图片25795张，另加入图片31316张）。数据集细节如下：
 
 YNU-RMOD数据集的来源
 Label	   |  Name	  |  The number of images
@@ -33,6 +41,9 @@ The YNU-RMOD 数据集的标注图如下所示:
         <td ><center><img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/34.png"></center></td>
     </tr>
 </table>  
+
+
+# 二、基于LabelImg的旋转目标检测标注软件
 我们研究使用深度学习的办法检测机器人和装甲板，还自制了带旋转矩形框的标注软件。
 使用指导:  
 1.点击Open或Open Dir(如需大量标记图片建议批量放在Picture_Data文件夹中 点击Open Dir)。   
