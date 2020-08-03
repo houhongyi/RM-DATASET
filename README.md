@@ -27,4 +27,15 @@ Label	   |  Name	  |  Total instances
 8	   |   armor_blue	               |     161333
 9	   |   armor_grey	               |     22146  
 
-We also made our own dataset labeling software for labeling rotating rectangular boxes. The rendering effect diagram is as follows:
+We also made our own dataset labeling software for labeling rotating rectangular boxes. The rendering effect diagram is as follows:  
+<table>
+    <tr>
+        <td ><center><img src="https://github.com/Damon2019/RM-DATASET/blob/master/images/1.png">nav1</center></td>
+        <td ><center><img src="https://github.com/Damon2019/RM-DATASET/blob/master/images/2.png">nav2</center></td>
+        <td ><center><img src="https://github.com/Damon2019/RM-DATASET/blob/master/images/3.png">nav2</center></td>
+        <td ><center><img src="https://github.com/Damon2019/RM-DATASET/blob/master/images/4.png">nav2</center></td>
+        <td ><center><img src="https://github.com/Damon2019/RM-DATASET/blob/master/images/5.png">nav2</center></td>
+    </tr>
+
+</table>
+
