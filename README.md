@@ -40,7 +40,7 @@ The YNU-RMOD 数据集的标注图如下所示:
 </table>
 <table>
     <tr>
-        <td ><center><img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/34.png"></center></td>
+        <td ><center><img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/37.png"></center></td>
     </tr>
 </table>  
 
