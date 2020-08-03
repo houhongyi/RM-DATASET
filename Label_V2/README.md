@@ -11,11 +11,13 @@ Using:
 Rectangles:  
 <img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/21.png">    
 <img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/22.png">    
+
 点完第一个点松开鼠标滑动至令一标注边缘点击鼠标即可完成标注。    
 Polygons:   
 <img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/23.png">    
-<img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/24.png">    
+<img src="https://www.github.com/Damon2019/RM-DATASET/raw/master/images/24.png">   
+
 标注顺序：永远先点击左上角为1，然后点击右上角为2，最后点击右下角为3（如上所示），程序会自动拟合出与之匹配的斜矩形。  
-3.保存  
+3.保存
 点击save或者(Ctrl+S)，即可保存json标注文件。  
 
